@@ -1,0 +1,133 @@
+/* Game Board Styles */
+#board {
+    width: 330px;
+}
+
+.tile {
+    width: 62px;
+    height: 62px;
+    border: 2px solid #d3d6da;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2px;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+}
+
+/* Keyboard Styles */
+.key {
+    background-color: #d3d6da;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+.key:hover {
+    background-color: #bbb;
+    transform: translateY(-1px);
+}
+
+.key:active {
+    transform: translateY(1px);
+}
+
+.key.special {
+    flex: 1.5;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Tile States */
+.tile.filled {
+    border: 2px solid #878a8c;
+}
+
+.tile.correct {
+    background-color: #6aaa64;
+    color: white;
+    border-color: #6aaa64;
+}
+
+.tile.present {
+    background-color: #c9b458;
+    color: white;
+    border-color: #c9b458;
+}
+
+.tile.absent {
+    background-color: #787c7e;
+    color: white;
+    border-color: #787c7e;
+}
+
+/* Key States */
+.key.correct {
+    background-color: #6aaa64;
+    color: white;
+}
+
+.key.present {
+    background-color: #c9b458;
+    color: white;
+}
+
+.key.absent {
+    background-color: #787c7e;
+    color: white;
+}
+
+/* Animations */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes bounce {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.shake {
+    animation: shake 0.5s;
+}
+
+.bounce {
+    animation: bounce 0.2s;
+}
+
+/* Toast Animation */
+#toast.show {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    #board {
+        width: 300px;
+    }
+
+    .tile {
+        width: 56px;
+        height: 56px;
+        font-size: 1.8rem;
+    }
+
+    .key {
+        height: 50px;
+        font-size: 0.9rem;
+    }
+}
