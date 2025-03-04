@@ -1,0 +1,18 @@
+const validWords = [
+    "APPLE", "BEACH", "CHAIR", "DANCE", "EAGLE", "FLAME", "GRAPE", "HOUSE", "IMAGE",
+    "JUICE", "KNIFE", "LEMON", "MOUSE", "NIGHT", "OCEAN", "PIANO", "QUEEN", "RADIO",
+    "SNAKE", "TABLE", "UNCLE", "VOICE", "WATER", "YOUTH", "ZEBRA", "BREAD", "CLOUD",
+    "DREAM", "EARTH", "FLUTE", "GREEN", "HEART", "IVORY", "JELLY", "KITE", "LIGHT",
+    "MONEY", "NURSE", "OLIVE", "PEACE", "QUIET", "RIVER", "SMILE", "TRAIN", "UNITY",
+    "VIOLIN", "WHALE", "XRAY", "YOUNG", "ZESTY", "BRAIN", "CRANE", "DRINK", "FROST",
+    "GHOST", "HAPPY", "JOINT", "LUCKY", "MAGIC", "PAINT", "QUICK", "ROUND", "SHARP",
+    "THINK", "URBAN", "WORLD", "SPARK", "SPACE", "STORM", "SWEET", "TRUST", "WINGS"
+];
+
+const secretWords = [
+    "APPLE", "BEACH", "CHAIR", "DANCE", "EAGLE", "FLAME", "GRAPE", "HOUSE", "IMAGE",
+    "JUICE", "KNIFE", "LEMON", "MOUSE", "NIGHT", "OCEAN", "PIANO", "QUEEN", "RADIO",
+    "SNAKE", "TABLE", "UNCLE", "VOICE", "WATER", "YOUTH", "ZEBRA", "BRAIN", "CRANE",
+    "DRINK", "FROST", "GHOST", "HAPPY", "JOINT", "LUCKY", "MAGIC", "PAINT", "QUICK",
+    "ROUND", "SHARP", "THINK", "URBAN", "WORLD", "SPARK", "SPACE", "STORM", "SWEET"
+];
